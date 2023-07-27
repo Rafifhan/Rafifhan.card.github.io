@@ -10,6 +10,7 @@ async function fetchAndDisplayUsers() {
     users.forEach((user) => {
       const name = user.name;
       const phone = user.phone;
+      const zipcode = user.zipcode;
       const imageSrc = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Stick_Figure.svg/1451px-Stick_Figure.svg.png";
 
       const cardView = document.createElement("div");
@@ -18,10 +19,10 @@ async function fetchAndDisplayUsers() {
       const userImage = document.createElement("img");
       userImage.src = imageSrc;
       userImage.alt = name;
-      userImage.style.maxWidth = "50px";
+      userImage.style.maxWidth = "30px";
       cardView.appendChild(userImage);
       cardView.innerHTML = `
-          <img src="${imageSrc}" alt="${name}" style="max-width: 144px;">
+          <img src="${imageSrc}" alt="${name}" style="max-width: 150px;">
             <h2>${name}</h2>
             <p>Phone: ${phone}</p>
           `;
