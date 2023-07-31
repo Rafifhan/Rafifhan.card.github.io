@@ -49,3 +49,15 @@ body {
   color: rgb(0, 4, 255);
 }
 
+h3 {
+  padding-bottom: 20px;
+}
+
+.wrapper {
+  border: 1px solid;
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
